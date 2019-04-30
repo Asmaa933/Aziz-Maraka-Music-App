@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		72F6B27A2277BB7D00EEE3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */; };
-		72F6B27C2277BB7D00EEE3B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B27B2277BB7D00EEE3B6 /* ViewController.swift */; };
-		72F6B27F2277BB7D00EEE3B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6B27D2277BB7D00EEE3B6 /* Main.storyboard */; };
+		72F6B27C2277BB7D00EEE3B6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */; };
 		72F6B2812277BB7F00EEE3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F6B2802277BB7F00EEE3B6 /* Assets.xcassets */; };
 		72F6B2842277BB7F00EEE3B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6B2822277BB7F00EEE3B6 /* LaunchScreen.storyboard */; };
+		72F6B28C2277BC9100EEE3B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6B28B2277BC9100EEE3B6 /* Main.storyboard */; };
+		72F6B28E2277BCD900EEE3B6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B28D2277BCD900EEE3B6 /* SignInViewController.swift */; };
+		72F6B2912277C04B00EEE3B6 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2902277C04B00EEE3B6 /* URLs.swift */; };
+		72F6B2932277C2F100EEE3B6 /* HelpingMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2922277C2F100EEE3B6 /* HelpingMethods.swift */; };
+		72F6B2952277C45700EEE3B6 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2942277C45700EEE3B6 /* RegisterService.swift */; };
+		72F6B2992277D8DE00EEE3B6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */; };
+		72F6B29B2277E2F000EEE3B6 /* CheckRegisteredInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B29A2277E2F000EEE3B6 /* CheckRegisteredInfo.swift */; };
+		934CDBE1104DA935862EAAC4 /* Pods_Aziz_Maraka_Music_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4202372991DBE4C98B63C761 /* Pods_Aziz_Maraka_Music_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		282E177A0A6EA3A8C02E654F /* Pods-Aziz Maraka Music App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aziz Maraka Music App.debug.xcconfig"; path = "Target Support Files/Pods-Aziz Maraka Music App/Pods-Aziz Maraka Music App.debug.xcconfig"; sourceTree = "<group>"; };
+		4202372991DBE4C98B63C761 /* Pods_Aziz_Maraka_Music_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aziz_Maraka_Music_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAFB38375A0B4B80D663B94 /* Pods-Aziz Maraka Music App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aziz Maraka Music App.release.xcconfig"; path = "Target Support Files/Pods-Aziz Maraka Music App/Pods-Aziz Maraka Music App.release.xcconfig"; sourceTree = "<group>"; };
 		72F6B2762277BB7D00EEE3B6 /* Aziz Maraka Music App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aziz Maraka Music App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72F6B27B2277BB7D00EEE3B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72F6B27E2277BB7D00EEE3B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		72F6B2802277BB7F00EEE3B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F6B2832277BB7F00EEE3B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F6B2852277BB7F00EEE3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F6B28B2277BC9100EEE3B6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		72F6B28D2277BCD900EEE3B6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		72F6B2902277C04B00EEE3B6 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		72F6B2922277C2F100EEE3B6 /* HelpingMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpingMethods.swift; sourceTree = "<group>"; };
+		72F6B2942277C45700EEE3B6 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		72F6B29A2277E2F000EEE3B6 /* CheckRegisteredInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckRegisteredInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934CDBE1104DA935862EAAC4 /* Pods_Aziz_Maraka_Music_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD5DAF37AC8A9101202AC3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				282E177A0A6EA3A8C02E654F /* Pods-Aziz Maraka Music App.debug.xcconfig */,
+				6EAFB38375A0B4B80D663B94 /* Pods-Aziz Maraka Music App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		72F6B26D2277BB7D00EEE3B6 = {
 			isa = PBXGroup;
 			children = (
 				72F6B2782277BB7D00EEE3B6 /* Aziz Maraka Music App */,
 				72F6B2772277BB7D00EEE3B6 /* Products */,
+				1CD5DAF37AC8A9101202AC3C /* Pods */,
+				9771B1AE232EDA37F47028A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +83,51 @@
 			isa = PBXGroup;
 			children = (
 				72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */,
-				72F6B27B2277BB7D00EEE3B6 /* ViewController.swift */,
-				72F6B27D2277BB7D00EEE3B6 /* Main.storyboard */,
+				72F6B28F2277BCDF00EEE3B6 /* View Controllers */,
+				72F6B28B2277BC9100EEE3B6 /* Main.storyboard */,
 				72F6B2802277BB7F00EEE3B6 /* Assets.xcassets */,
 				72F6B2822277BB7F00EEE3B6 /* LaunchScreen.storyboard */,
 				72F6B2852277BB7F00EEE3B6 /* Info.plist */,
+				72F6B2902277C04B00EEE3B6 /* URLs.swift */,
+				72F6B2972277C81C00EEE3B6 /* Helping Methods */,
+				72F6B2962277C7A400EEE3B6 /* Services */,
+				72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */,
 			);
 			path = "Aziz Maraka Music App";
+			sourceTree = "<group>";
+		};
+		72F6B28F2277BCDF00EEE3B6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72F6B28D2277BCD900EEE3B6 /* SignInViewController.swift */,
+				72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		72F6B2962277C7A400EEE3B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72F6B2942277C45700EEE3B6 /* RegisterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		72F6B2972277C81C00EEE3B6 /* Helping Methods */ = {
+			isa = PBXGroup;
+			children = (
+				72F6B2922277C2F100EEE3B6 /* HelpingMethods.swift */,
+				72F6B29A2277E2F000EEE3B6 /* CheckRegisteredInfo.swift */,
+			);
+			path = "Helping Methods";
+			sourceTree = "<group>";
+		};
+		9771B1AE232EDA37F47028A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4202372991DBE4C98B63C761 /* Pods_Aziz_Maraka_Music_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72F6B2882277BB7F00EEE3B6 /* Build configuration list for PBXNativeTarget "Aziz Maraka Music App" */;
 			buildPhases = (
+				80FC2E67D5DDD3EA1BCF1070 /* [CP] Check Pods Manifest.lock */,
 				72F6B2722277BB7D00EEE3B6 /* Sources */,
 				72F6B2732277BB7D00EEE3B6 /* Frameworks */,
 				72F6B2742277BB7D00EEE3B6 /* Resources */,
+				9DC9D47D09CC72F0243EABAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,33 +192,78 @@
 			files = (
 				72F6B2842277BB7F00EEE3B6 /* LaunchScreen.storyboard in Resources */,
 				72F6B2812277BB7F00EEE3B6 /* Assets.xcassets in Resources */,
-				72F6B27F2277BB7D00EEE3B6 /* Main.storyboard in Resources */,
+				72F6B28C2277BC9100EEE3B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80FC2E67D5DDD3EA1BCF1070 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aziz Maraka Music App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC9D47D09CC72F0243EABAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aziz Maraka Music App/Pods-Aziz Maraka Music App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aziz Maraka Music App/Pods-Aziz Maraka Music App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72F6B2722277BB7D00EEE3B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F6B27C2277BB7D00EEE3B6 /* ViewController.swift in Sources */,
+				72F6B28E2277BCD900EEE3B6 /* SignInViewController.swift in Sources */,
+				72F6B2992277D8DE00EEE3B6 /* RegisterModel.swift in Sources */,
+				72F6B27C2277BB7D00EEE3B6 /* RegisterViewController.swift in Sources */,
+				72F6B2952277C45700EEE3B6 /* RegisterService.swift in Sources */,
+				72F6B29B2277E2F000EEE3B6 /* CheckRegisteredInfo.swift in Sources */,
 				72F6B27A2277BB7D00EEE3B6 /* AppDelegate.swift in Sources */,
+				72F6B2932277C2F100EEE3B6 /* HelpingMethods.swift in Sources */,
+				72F6B2912277C04B00EEE3B6 /* URLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		72F6B27D2277BB7D00EEE3B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72F6B27E2277BB7D00EEE3B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72F6B2822277BB7F00EEE3B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +393,7 @@
 		};
 		72F6B2892277BB7F00EEE3B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282E177A0A6EA3A8C02E654F /* Pods-Aziz Maraka Music App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +412,7 @@
 		};
 		72F6B28A2277BB7F00EEE3B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EAFB38375A0B4B80D663B94 /* Pods-Aziz Maraka Music App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
