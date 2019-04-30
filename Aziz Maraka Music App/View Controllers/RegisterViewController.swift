@@ -42,15 +42,15 @@ class RegisterViewController: UIViewController {
                                         "password_confirmation" :newUserInfo[6].text ?? ""
                                         ]
 
-        registerService.registerNewUser(parameters: parameters) { (success, error) in
-            if success{
-                print("success")
+        registerService.registerNewUser(parameters: parameters) { (responseModel, error) in
+            if responseModel != nil && error == nil {
+                print(responseModel?.id ?? 0)
         }
     
 }
 }
+
+
 }
-
-
 
 

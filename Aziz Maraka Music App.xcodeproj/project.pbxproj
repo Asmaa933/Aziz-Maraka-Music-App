@@ -18,6 +18,8 @@
 		72F6B2952277C45700EEE3B6 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2942277C45700EEE3B6 /* RegisterService.swift */; };
 		72F6B2992277D8DE00EEE3B6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */; };
 		72F6B29B2277E2F000EEE3B6 /* CheckRegisteredInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B29A2277E2F000EEE3B6 /* CheckRegisteredInfo.swift */; };
+		72F6B29F2278065100EEE3B6 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B29E2278065100EEE3B6 /* RegisterResponseModel.swift */; };
+		72F6B2A122780C2200EEE3B6 /* SignInServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2A022780C2200EEE3B6 /* SignInServices.swift */; };
 		934CDBE1104DA935862EAAC4 /* Pods_Aziz_Maraka_Music_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4202372991DBE4C98B63C761 /* Pods_Aziz_Maraka_Music_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		72F6B2942277C45700EEE3B6 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		72F6B29A2277E2F000EEE3B6 /* CheckRegisteredInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckRegisteredInfo.swift; sourceTree = "<group>"; };
+		72F6B29E2278065100EEE3B6 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
+		72F6B2A022780C2200EEE3B6 /* SignInServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		72F6B2782277BB7D00EEE3B6 /* Aziz Maraka Music App */ = {
 			isa = PBXGroup;
 			children = (
+				72F6B29E2278065100EEE3B6 /* RegisterResponseModel.swift */,
 				72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */,
 				72F6B28F2277BCDF00EEE3B6 /* View Controllers */,
 				72F6B28B2277BC9100EEE3B6 /* Main.storyboard */,
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				72F6B2942277C45700EEE3B6 /* RegisterService.swift */,
+				72F6B2A022780C2200EEE3B6 /* SignInServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -252,8 +258,10 @@
 			files = (
 				72F6B28E2277BCD900EEE3B6 /* SignInViewController.swift in Sources */,
 				72F6B2992277D8DE00EEE3B6 /* RegisterModel.swift in Sources */,
+				72F6B29F2278065100EEE3B6 /* RegisterResponseModel.swift in Sources */,
 				72F6B27C2277BB7D00EEE3B6 /* RegisterViewController.swift in Sources */,
 				72F6B2952277C45700EEE3B6 /* RegisterService.swift in Sources */,
+				72F6B2A122780C2200EEE3B6 /* SignInServices.swift in Sources */,
 				72F6B29B2277E2F000EEE3B6 /* CheckRegisteredInfo.swift in Sources */,
 				72F6B27A2277BB7D00EEE3B6 /* AppDelegate.swift in Sources */,
 				72F6B2932277C2F100EEE3B6 /* HelpingMethods.swift in Sources */,

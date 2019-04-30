@@ -1,5 +1,5 @@
 //
-//  RegisterServices.swift
+//  SignInServices.swift
 //  Aziz Maraka Music App
 //
 //  Created by AsMaa on 4/30/19.
@@ -9,12 +9,12 @@
 import Foundation
 import Alamofire
 
-class RegisterService  {
+class SignInServices {
     
-    let headers = ["accept": "application/json"]
-   
-    func registerNewUser(parameters: [String:Any],completion: @escaping (_ jsonData: RegisterResponseModel?,_ error:Error?) -> Void) {
-        Alamofire.request(URLs.registerURL.rawValue.getFullURL(), method: .post, parameters: parameters, encoding: URLEncoding.default, headers: headers).responseJSON { (response) in
+    let headers = ["Content-Type": "application/json"]
+    
+    func signInUser(parameters: [String:Any],completion: @escaping (_ jsonData: RegisterResponseModel?,_ error:Error?) -> Void) {
+        Alamofire.request(URLs.signInURL.rawValue.getFullURL(), method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             switch response.result{
             case .success:
                 let jsonDecoder = JSONDecoder()
@@ -23,7 +23,7 @@ class RegisterService  {
                     completion(responseModel, nil)
                 }catch(let error){
                     completion(nil,error)
-
+                    
                 }
                 
                 
@@ -31,6 +31,7 @@ class RegisterService  {
                 print(error.localizedDescription)
                 completion(nil,error)
             }
-}
-}
+        }
+    }
+    
 }
