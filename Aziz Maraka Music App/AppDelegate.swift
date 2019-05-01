@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if let _ = LocalStore.sharedLocalStore.getAccessToken(){
             let mainSB = UIStoryboard(name: "Main", bundle: nil)
-            let homeVC =  mainSB.instantiateViewController(withIdentifier: homeViewControllerID) as! HomeViewController
+            let homeVC =  mainSB.instantiateViewController(withIdentifier: SongViewControllerID) as! SongViewController
             self.window?.rootViewController = homeVC
             
         }

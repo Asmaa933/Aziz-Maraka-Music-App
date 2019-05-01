@@ -10,7 +10,16 @@
 		720E031422791F6700CC67E6 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E031322791F6700CC67E6 /* SignInModel.swift */; };
 		720E0316227924B200CC67E6 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E0315227924B100CC67E6 /* LocalStore.swift */; };
 		720E03182279284200CC67E6 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E03172279284200CC67E6 /* constants.swift */; };
-		720E031A22792C4E00CC67E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E031922792C4E00CC67E6 /* HomeViewController.swift */; };
+		720E031A22792C4E00CC67E6 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E031922792C4E00CC67E6 /* SongViewController.swift */; };
+		72F627932279588A00031423 /* Ya_Bnt_elnas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278B2279588500031423 /* Ya_Bnt_elnas.mp3 */; };
+		72F627942279588A00031423 /* Wa2ef.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278C2279588500031423 /* Wa2ef.mp3 */; };
+		72F627952279588A00031423 /* Sheikh_Elbald.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278D2279588600031423 /* Sheikh_Elbald.mp3 */; };
+		72F627962279588A00031423 /* Ya_Baay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278E2279588600031423 /* Ya_Baay.mp3 */; };
+		72F627972279588A00031423 /* Meen_2alek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278F2279588700031423 /* Meen_2alek.mp3 */; };
+		72F627982279588A00031423 /* Heya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F627902279588800031423 /* Heya.mp3 */; };
+		72F627992279588A00031423 /* Bnt_Qawea.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F627912279588800031423 /* Bnt_Qawea.mp3 */; };
+		72F6279A2279588A00031423 /* Tzakrtk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F627922279588900031423 /* Tzakrtk.mp3 */; };
+		72F6279D22795A8000031423 /* SongsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72F6279C22795A8000031423 /* SongsList.plist */; };
 		72F6B27A2277BB7D00EEE3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */; };
 		72F6B27C2277BB7D00EEE3B6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */; };
 		72F6B2812277BB7F00EEE3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F6B2802277BB7F00EEE3B6 /* Assets.xcassets */; };
@@ -34,7 +43,16 @@
 		720E031322791F6700CC67E6 /* SignInModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		720E0315227924B100CC67E6 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		720E03172279284200CC67E6 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
-		720E031922792C4E00CC67E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		720E031922792C4E00CC67E6 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		72F6278B2279588500031423 /* Ya_Bnt_elnas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ya_Bnt_elnas.mp3; sourceTree = "<group>"; };
+		72F6278C2279588500031423 /* Wa2ef.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wa2ef.mp3; sourceTree = "<group>"; };
+		72F6278D2279588600031423 /* Sheikh_Elbald.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sheikh_Elbald.mp3; sourceTree = "<group>"; };
+		72F6278E2279588600031423 /* Ya_Baay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ya_Baay.mp3; sourceTree = "<group>"; };
+		72F6278F2279588700031423 /* Meen_2alek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Meen_2alek.mp3; sourceTree = "<group>"; };
+		72F627902279588800031423 /* Heya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Heya.mp3; sourceTree = "<group>"; };
+		72F627912279588800031423 /* Bnt_Qawea.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bnt_Qawea.mp3; sourceTree = "<group>"; };
+		72F627922279588900031423 /* Tzakrtk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tzakrtk.mp3; sourceTree = "<group>"; };
+		72F6279C22795A8000031423 /* SongsList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SongsList.plist; sourceTree = "<group>"; };
 		72F6B2762277BB7D00EEE3B6 /* Aziz Maraka Music App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aziz Maraka Music App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +91,56 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		72F6279B227958AF00031423 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				72F627912279588800031423 /* Bnt_Qawea.mp3 */,
+				72F627902279588800031423 /* Heya.mp3 */,
+				72F6278F2279588700031423 /* Meen_2alek.mp3 */,
+				72F6278D2279588600031423 /* Sheikh_Elbald.mp3 */,
+				72F627922279588900031423 /* Tzakrtk.mp3 */,
+				72F6278C2279588500031423 /* Wa2ef.mp3 */,
+				72F6278E2279588600031423 /* Ya_Baay.mp3 */,
+				72F6278B2279588500031423 /* Ya_Bnt_elnas.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		72F6279E22796BF200031423 /* JSON Models */ = {
+			isa = PBXGroup;
+			children = (
+				720E031322791F6700CC67E6 /* SignInModel.swift */,
+				72F6B29E2278065100EEE3B6 /* RegisterResponseModel.swift */,
+			);
+			path = "JSON Models";
+			sourceTree = "<group>";
+		};
+		72F6279F22796C1100031423 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				72F6B2902277C04B00EEE3B6 /* URLs.swift */,
+				72F6B28D2277BCD900EEE3B6 /* SignInViewController.swift */,
+				72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		72F627A022796C1C00031423 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				720E031922792C4E00CC67E6 /* SongViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		72F627A122796CAE00031423 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		72F6B26D2277BB7D00EEE3B6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,20 +162,20 @@
 		72F6B2782277BB7D00EEE3B6 /* Aziz Maraka Music App */ = {
 			isa = PBXGroup;
 			children = (
-				720E031322791F6700CC67E6 /* SignInModel.swift */,
-				72F6B29E2278065100EEE3B6 /* RegisterResponseModel.swift */,
 				72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */,
-				72F6B28F2277BCDF00EEE3B6 /* View Controllers */,
 				72F6B28B2277BC9100EEE3B6 /* Main.storyboard */,
 				72F6B2802277BB7F00EEE3B6 /* Assets.xcassets */,
-				72F6B2822277BB7F00EEE3B6 /* LaunchScreen.storyboard */,
 				72F6B2852277BB7F00EEE3B6 /* Info.plist */,
-				72F6B2902277C04B00EEE3B6 /* URLs.swift */,
-				72F6B2972277C81C00EEE3B6 /* Helping Methods */,
+				72F6279B227958AF00031423 /* Songs */,
+				72F6279E22796BF200031423 /* JSON Models */,
 				72F6B2962277C7A400EEE3B6 /* Services */,
-				72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */,
+				72F627A122796CAE00031423 /* Models */,
+				72F6B28F2277BCDF00EEE3B6 /* View Controllers */,
+				72F6B2972277C81C00EEE3B6 /* Helping Methods */,
+				72F6B2822277BB7F00EEE3B6 /* LaunchScreen.storyboard */,
 				720E0315227924B100CC67E6 /* LocalStore.swift */,
 				720E03172279284200CC67E6 /* constants.swift */,
+				72F6279C22795A8000031423 /* SongsList.plist */,
 			);
 			path = "Aziz Maraka Music App";
 			sourceTree = "<group>";
@@ -115,9 +183,8 @@
 		72F6B28F2277BCDF00EEE3B6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				72F6B28D2277BCD900EEE3B6 /* SignInViewController.swift */,
-				72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */,
-				720E031922792C4E00CC67E6 /* HomeViewController.swift */,
+				72F6279F22796C1100031423 /* API */,
+				72F627A022796C1C00031423 /* UI */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -208,9 +275,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F627992279588A00031423 /* Bnt_Qawea.mp3 in Resources */,
+				72F627982279588A00031423 /* Heya.mp3 in Resources */,
+				72F627972279588A00031423 /* Meen_2alek.mp3 in Resources */,
+				72F6279D22795A8000031423 /* SongsList.plist in Resources */,
+				72F627942279588A00031423 /* Wa2ef.mp3 in Resources */,
+				72F6279A2279588A00031423 /* Tzakrtk.mp3 in Resources */,
+				72F627952279588A00031423 /* Sheikh_Elbald.mp3 in Resources */,
 				72F6B2842277BB7F00EEE3B6 /* LaunchScreen.storyboard in Resources */,
 				72F6B2812277BB7F00EEE3B6 /* Assets.xcassets in Resources */,
 				72F6B28C2277BC9100EEE3B6 /* Main.storyboard in Resources */,
+				72F627932279588A00031423 /* Ya_Bnt_elnas.mp3 in Resources */,
+				72F627962279588A00031423 /* Ya_Baay.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +349,7 @@
 				72F6B29F2278065100EEE3B6 /* RegisterResponseModel.swift in Sources */,
 				72F6B27C2277BB7D00EEE3B6 /* RegisterViewController.swift in Sources */,
 				72F6B2952277C45700EEE3B6 /* RegisterService.swift in Sources */,
-				720E031A22792C4E00CC67E6 /* HomeViewController.swift in Sources */,
+				720E031A22792C4E00CC67E6 /* SongViewController.swift in Sources */,
 				72F6B2A122780C2200EEE3B6 /* SignInServices.swift in Sources */,
 				720E03182279284200CC67E6 /* constants.swift in Sources */,
 				72F6B29B2277E2F000EEE3B6 /* CheckRegisteredInfo.swift in Sources */,

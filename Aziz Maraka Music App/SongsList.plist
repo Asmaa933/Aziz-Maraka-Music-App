@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>SongName </key>
+		<string>Bnt_Qawea</string>
+	</dict>
+	<dict>
+		<key>SongName </key>
+		<string>Heya</string>
+	</dict>
+    <dict>
+        <key>SongName </key>
+        <string>Meen_2alek</string>
+    </dict>
+    <dict>
+        <key>SongName </key>
+        <string>Sheikh_Elbald</string>
+    </dict>
+    <dict>
+        <key>SongName </key>
+        <string>Wa2ef</string>
+    </dict>
+    <dict>
+        <key>SongName </key>
+        <string>Ya_Baay</string>
+    </dict>
+    <dict>
+        <key>SongName </key>
+        <string>Ya_Bnt_elnas</string>
+    </dict>
+        
+</array>
+</plist>

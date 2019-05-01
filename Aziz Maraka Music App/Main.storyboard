@@ -191,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="-1022" y="7"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Song View Controller-->
         <scene sceneID="XHa-hn-boX">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="ecS-qD-jMK" customClass="HomeViewController" customModule="Aziz_Maraka_Music_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SongViewController" id="ecS-qD-jMK" customClass="SongViewController" customModule="Aziz_Maraka_Music_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ydu-w9-dCc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,62 +205,76 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-le-MZS">
                                 <rect key="frame" x="16" y="517" width="343" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJs-Jk-Unc">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJs-Jk-Unc">
                                         <rect key="frame" x="0.0" y="0.0" width="97.5" height="100"/>
                                         <state key="normal" title="Button" image="Pervious"/>
+                                        <connections>
+                                            <action selector="changeSongBtnTaped:" destination="ecS-qD-jMK" eventType="touchUpInside" id="Jrw-Zd-P5e"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-Ul-7lh">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-Ul-7lh">
                                         <rect key="frame" x="122.5" y="0.0" width="98" height="100"/>
                                         <state key="normal" title="Button" image="Play"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-9a-O0v">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-9a-O0v">
                                         <rect key="frame" x="245.5" y="0.0" width="97.5" height="100"/>
                                         <state key="normal" title="Button" image="Forward"/>
+                                        <connections>
+                                            <action selector="changeSongBtnTaped:" destination="ecS-qD-jMK" eventType="touchUpInside" id="CeT-im-Reh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Nvj-sf-Mt5"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-rY-7vw">
-                                <rect key="frame" x="16" y="125" width="343" height="316"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-rY-7vw">
+                                <rect key="frame" x="0.0" y="115" width="375" height="350"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gO-nn-2Gi">
-                                <rect key="frame" x="379" y="67" width="51" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
-                                <state key="normal" title="Log out">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="logOutBtnTapped:" destination="ecS-qD-jMK" eventType="touchUpInside" id="8AV-cd-xJf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4D-VX-HVl">
-                                <rect key="frame" x="253" y="82" width="111.5" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWZ-Yf-qrp">
-                                <rect key="frame" x="-89" y="30" width="343" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-0t-6eh">
+                                <rect key="frame" x="16" y="40" width="343" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWZ-Yf-qrp">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="50"/>
+                                        <state key="normal" title="Button" image="arrow"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4D-VX-HVl">
+                                        <rect key="frame" x="141" y="0.0" width="61" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gO-nn-2Gi">
+                                        <rect key="frame" x="282" y="0.0" width="61" height="31"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                        <state key="normal" title="Log out">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logOutBtnTapped:" destination="ecS-qD-jMK" eventType="touchUpInside" id="8AV-cd-xJf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="8rS-85-950"/>
-                                    <constraint firstAttribute="height" constant="25" id="XLG-B6-gWo"/>
+                                    <constraint firstAttribute="height" constant="50" id="Mxa-sT-W9P"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="arrow"/>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8ue-0t-6eh" firstAttribute="leading" secondItem="Ydu-w9-dCc" secondAttribute="leading" constant="16" id="1qS-XX-ihz"/>
+                            <constraint firstItem="5rO-6z-cNC" firstAttribute="trailing" secondItem="SHi-rY-7vw" secondAttribute="trailing" id="42T-rO-ARW"/>
                             <constraint firstItem="eHj-OH-9ja" firstAttribute="trailing" secondItem="5rO-6z-cNC" secondAttribute="trailing" id="4Xi-59-BKS"/>
                             <constraint firstItem="hzt-le-MZS" firstAttribute="leading" secondItem="5rO-6z-cNC" secondAttribute="leading" constant="16" id="65D-ex-x5a"/>
                             <constraint firstItem="eHj-OH-9ja" firstAttribute="top" secondItem="5rO-6z-cNC" secondAttribute="top" id="Bq3-mz-IIf"/>
+                            <constraint firstItem="SHi-rY-7vw" firstAttribute="top" secondItem="8ue-0t-6eh" secondAttribute="bottom" constant="25" id="M5I-dJ-SVS"/>
                             <constraint firstItem="eHj-OH-9ja" firstAttribute="leading" secondItem="5rO-6z-cNC" secondAttribute="leading" id="OyC-Lj-JTB"/>
                             <constraint firstItem="eHj-OH-9ja" firstAttribute="bottom" secondItem="5rO-6z-cNC" secondAttribute="bottom" id="QRm-vw-eI0"/>
+                            <constraint firstItem="hzt-le-MZS" firstAttribute="top" secondItem="SHi-rY-7vw" secondAttribute="bottom" constant="52" id="XhD-re-u7Y"/>
+                            <constraint firstItem="8ue-0t-6eh" firstAttribute="top" secondItem="5rO-6z-cNC" secondAttribute="top" constant="20" id="ekw-vr-X2Y"/>
                             <constraint firstItem="5rO-6z-cNC" firstAttribute="bottom" secondItem="hzt-le-MZS" secondAttribute="bottom" constant="50" id="g5M-KT-EjF"/>
+                            <constraint firstItem="SHi-rY-7vw" firstAttribute="leading" secondItem="5rO-6z-cNC" secondAttribute="leading" id="teF-gi-IIW"/>
+                            <constraint firstAttribute="trailing" secondItem="8ue-0t-6eh" secondAttribute="trailing" constant="16" id="yq0-zc-D2q"/>
                             <constraint firstItem="5rO-6z-cNC" firstAttribute="trailing" secondItem="hzt-le-MZS" secondAttribute="trailing" constant="16" id="zVr-iZ-TGh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5rO-6z-cNC"/>
@@ -271,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTh-Xh-fbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1418" y="17"/>
+            <point key="canvasLocation" x="1416.8" y="16.641679160419791"/>
         </scene>
     </scenes>
     <resources>
