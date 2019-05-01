@@ -15,10 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        if let accessToken = LocalStore.sharedLocalStore.getAccessToken(){
+        if let _ = LocalStore.sharedLocalStore.getAccessToken(){
             let mainSB = UIStoryboard(name: "Main", bundle: nil)
             let homeVC =  mainSB.instantiateViewController(withIdentifier: homeViewControllerID) as! HomeViewController
             self.window?.rootViewController = homeVC
+            
         }
     
         return true
