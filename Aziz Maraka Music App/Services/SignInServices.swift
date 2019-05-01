@@ -11,15 +11,20 @@ import Alamofire
 
 class SignInServices {
     
-    let headers = ["Content-Type": "application/json"]
     
-    func signInUser(parameters: [String:Any],completion: @escaping (_ jsonData: RegisterResponseModel?,_ error:Error?) -> Void) {
+    
+    func signInUser(parameters: [String:Any],completion: @escaping (_ jsonData: SignInModel?,_ error:Error?) -> Void) {
+        let headers = ["Content-Type": "application/json"]
         Alamofire.request(URLs.signInURL.rawValue.getFullURL(), method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             switch response.result{
             case .success:
                 let jsonDecoder = JSONDecoder()
                 do{
-                    let responseModel = try jsonDecoder.decode(RegisterResponseModel.self, from: response.data!)
+                    let responseModel = try jsonDecoder.decode(SignInModel.self, from: response.data!)
+                    
+                    if let theAccessToken = responseModel.access_token{
+                    LocalStore.sharedLocalStore.saveAccessToken(token: theAccessToken )
+                    }
                     completion(responseModel, nil)
                 }catch(let error){
                     completion(nil,error)

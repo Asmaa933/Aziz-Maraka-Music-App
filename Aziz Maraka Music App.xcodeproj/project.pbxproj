@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720E031422791F6700CC67E6 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E031322791F6700CC67E6 /* SignInModel.swift */; };
+		720E0316227924B200CC67E6 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E0315227924B100CC67E6 /* LocalStore.swift */; };
+		720E03182279284200CC67E6 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E03172279284200CC67E6 /* constants.swift */; };
+		720E031A22792C4E00CC67E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E031922792C4E00CC67E6 /* HomeViewController.swift */; };
 		72F6B27A2277BB7D00EEE3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */; };
 		72F6B27C2277BB7D00EEE3B6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */; };
 		72F6B2812277BB7F00EEE3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F6B2802277BB7F00EEE3B6 /* Assets.xcassets */; };
@@ -27,6 +31,10 @@
 		282E177A0A6EA3A8C02E654F /* Pods-Aziz Maraka Music App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aziz Maraka Music App.debug.xcconfig"; path = "Target Support Files/Pods-Aziz Maraka Music App/Pods-Aziz Maraka Music App.debug.xcconfig"; sourceTree = "<group>"; };
 		4202372991DBE4C98B63C761 /* Pods_Aziz_Maraka_Music_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aziz_Maraka_Music_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EAFB38375A0B4B80D663B94 /* Pods-Aziz Maraka Music App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aziz Maraka Music App.release.xcconfig"; path = "Target Support Files/Pods-Aziz Maraka Music App/Pods-Aziz Maraka Music App.release.xcconfig"; sourceTree = "<group>"; };
+		720E031322791F6700CC67E6 /* SignInModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		720E0315227924B100CC67E6 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		720E03172279284200CC67E6 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		720E031922792C4E00CC67E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		72F6B2762277BB7D00EEE3B6 /* Aziz Maraka Music App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aziz Maraka Music App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +94,7 @@
 		72F6B2782277BB7D00EEE3B6 /* Aziz Maraka Music App */ = {
 			isa = PBXGroup;
 			children = (
+				720E031322791F6700CC67E6 /* SignInModel.swift */,
 				72F6B29E2278065100EEE3B6 /* RegisterResponseModel.swift */,
 				72F6B2792277BB7D00EEE3B6 /* AppDelegate.swift */,
 				72F6B28F2277BCDF00EEE3B6 /* View Controllers */,
@@ -97,6 +106,8 @@
 				72F6B2972277C81C00EEE3B6 /* Helping Methods */,
 				72F6B2962277C7A400EEE3B6 /* Services */,
 				72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */,
+				720E0315227924B100CC67E6 /* LocalStore.swift */,
+				720E03172279284200CC67E6 /* constants.swift */,
 			);
 			path = "Aziz Maraka Music App";
 			sourceTree = "<group>";
@@ -106,6 +117,7 @@
 			children = (
 				72F6B28D2277BCD900EEE3B6 /* SignInViewController.swift */,
 				72F6B27B2277BB7D00EEE3B6 /* RegisterViewController.swift */,
+				720E031922792C4E00CC67E6 /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -261,11 +273,15 @@
 				72F6B29F2278065100EEE3B6 /* RegisterResponseModel.swift in Sources */,
 				72F6B27C2277BB7D00EEE3B6 /* RegisterViewController.swift in Sources */,
 				72F6B2952277C45700EEE3B6 /* RegisterService.swift in Sources */,
+				720E031A22792C4E00CC67E6 /* HomeViewController.swift in Sources */,
 				72F6B2A122780C2200EEE3B6 /* SignInServices.swift in Sources */,
+				720E03182279284200CC67E6 /* constants.swift in Sources */,
 				72F6B29B2277E2F000EEE3B6 /* CheckRegisteredInfo.swift in Sources */,
 				72F6B27A2277BB7D00EEE3B6 /* AppDelegate.swift in Sources */,
 				72F6B2932277C2F100EEE3B6 /* HelpingMethods.swift in Sources */,
 				72F6B2912277C04B00EEE3B6 /* URLs.swift in Sources */,
+				720E031422791F6700CC67E6 /* SignInModel.swift in Sources */,
+				720E0316227924B200CC67E6 /* LocalStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
