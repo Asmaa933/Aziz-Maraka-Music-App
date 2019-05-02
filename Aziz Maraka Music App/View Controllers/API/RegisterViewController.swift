@@ -9,12 +9,12 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-// array of outlets
+
+    // array of outlets
 
     @IBOutlet weak var msgToUserLabel: UILabel!
     @IBOutlet var newUserInfo: [UITextField]!
     let registerService = RegisterService()
-    let helpingMethods = HelpingMethods()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

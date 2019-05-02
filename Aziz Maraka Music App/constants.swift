@@ -10,4 +10,6 @@ import Foundation
 let accessToken = "access_token"
 
 let signInViewControllerID = "SignInViewController"
-let SongViewControllerID = "SongViewController"
+let songViewControllerID = "SongViewController"
+let signInNavigationID = "SignInNavigation"
+let homeNavigationID = "HomeNavigation"

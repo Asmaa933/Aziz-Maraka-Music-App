@@ -43,7 +43,7 @@ songNameLabel.text = "glaefhuazguahoahrowgrigreahoreag"
     
     @IBAction func logOutBtnTapped(_ sender: Any) {
         LocalStore.sharedLocalStore.deleteAccessToken()
-        let signInVC = self.storyboard?.instantiateViewController(withIdentifier: signInViewControllerID) as! SignInViewController
+        let signInVC = self.storyboard?.instantiateViewController(withIdentifier: signInNavigationID)
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = signInVC
     }

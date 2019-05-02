@@ -11,6 +11,7 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var logInBtn: UIBarButtonItem!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     let signInServices = SignInServices()
@@ -22,6 +23,7 @@ class SignInViewController: UIViewController {
     
 
     @IBAction func loginBtnTapped(_ sender: UIBarButtonItem) {
+       logInBtn.isEnabled = false
         let parameters : [String:Any] = [
             "grant_type":"password",
             "client_id":"4",
@@ -30,10 +32,13 @@ class SignInViewController: UIViewController {
             "password" : passwordTxt.text ?? "no password",
             "scope":"*"
         ]
+        let activityInd = showActivityIndicator(view: self.view)
         signInServices.signInUser(parameters: parameters) { (responseModel, error) in
+    removeActivityIndicator(activityIndicator: activityInd)
+            self.logInBtn.isEnabled = true
             if responseModel != nil && error == nil{
              print(responseModel?.access_token ?? "no access token")
-                let songVC = self.storyboard?.instantiateViewController(withIdentifier: SongViewControllerID) as! SongViewController
+                let songVC = self.storyboard?.instantiateViewController(withIdentifier: homeNavigationID) 
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
                 appDelegate.window?.rootViewController = songVC
                 
