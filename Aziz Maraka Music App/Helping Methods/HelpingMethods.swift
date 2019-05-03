@@ -16,6 +16,7 @@ extension String{
     }
 }
 
+
 func showActivityIndicator(view: UIView) -> UIActivityIndicatorView{
     let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
     

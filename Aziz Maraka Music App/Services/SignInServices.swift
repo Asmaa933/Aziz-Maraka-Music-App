@@ -23,7 +23,7 @@ class SignInServices {
                     let responseModel = try jsonDecoder.decode(SignInModel.self, from: response.data!)
                     
                     if let theAccessToken = responseModel.access_token{
-                    LocalStore.sharedLocalStore.saveAccessToken(token: theAccessToken )
+                    LocalStore.sharedLocalStore.saveAccessToken(token: theAccessToken)
                     }
                     completion(responseModel, nil)
                 }catch(let error){

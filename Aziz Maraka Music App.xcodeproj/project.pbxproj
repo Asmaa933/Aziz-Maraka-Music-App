@@ -102,6 +102,7 @@
 				72F6278C2279588500031423 /* Wa2ef.mp3 */,
 				72F6278E2279588600031423 /* Ya_Baay.mp3 */,
 				72F6278B2279588500031423 /* Ya_Bnt_elnas.mp3 */,
+				72F6279C22795A8000031423 /* SongsList.plist */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -175,7 +176,6 @@
 				72F6B2972277C81C00EEE3B6 /* Helping Methods */,
 				720E0315227924B100CC67E6 /* LocalStore.swift */,
 				720E03172279284200CC67E6 /* constants.swift */,
-				72F6279C22795A8000031423 /* SongsList.plist */,
 			);
 			path = "Aziz Maraka Music App";
 			sourceTree = "<group>";
@@ -249,6 +249,11 @@
 				TargetAttributes = {
 					72F6B2752277BB7D00EEE3B6 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

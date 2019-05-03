@@ -10,37 +10,75 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-class SongViewController: UIViewController {
-
+class SongViewController: UIViewController{
+   
     var audioList: NSArray?
-    let songPlayer = AVPlayer()
+    var songPlayer = AVAudioPlayer()
+    var currentSongName: String?
+    var currentSongPath: URL?
+    var currentSongIndex = LocalStore.songLocalStore.getLastSongIndex()
+    var songIsPlaying = false
+
+   
     @IBOutlet weak var songNameLabel: UILabel!
     
+    @IBOutlet weak var playBtn: UIButton!
+    
+    @IBOutlet weak var artistImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-songNameLabel.text = "glaefhuazguahoahrowgrigreahoreag"
         // Do any additional setup after loading the view.
-    updateUI()
         readFromPlist()
-        prepareSongs()
+  configureAVSession()
+prepareSongs()
+        changeImages()
     }
-    func updateUI(){
+   
+    @IBAction func checkRepeatSwitchState(_ sender: UISwitch) {
         
+        if sender.isOn {
+        songPlayer.numberOfLoops = -1
+        }
     }
+    
     func readFromPlist(){
         let path = Bundle.main.path(forResource: "SongsList", ofType: "plist")
         audioList = NSArray(contentsOf: URL(fileURLWithPath: path ?? "" )) ?? []
     }
-    func prepareSongs(){
+    func configureAVSession(){
         do{
-//try songPlayer = AVAudioPlayer(contentsOf: <#T##URL#>)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: .allowBluetooth)
+        }catch{
+            
+        }
+        do{
+            try AVAudioSession.sharedInstance().setActive(true)
+        }catch{
+            
+        }
+   
+    }
+    func prepareSongs(){
+        setCurrentSong()
+        do{
+            try songPlayer =  AVAudioPlayer(contentsOf: currentSongPath!)
         }catch(let error){
             print(error)
         }
         
         
     }
-    
+    func setCurrentSong(){
+        let currentSong = audioList?[currentSongIndex] as! [String:String]
+         currentSongName = currentSong["SongName"]
+        songNameLabel.text = currentSongName
+        getSongPath()
+    }
+    func getSongPath(){
+         let path = Bundle.main.path(forResource: currentSongName, ofType: "mp3")
+        currentSongPath = URL(fileURLWithPath: path!)
+        
+    }
     @IBAction func logOutBtnTapped(_ sender: Any) {
         LocalStore.sharedLocalStore.deleteAccessToken()
         let signInVC = self.storyboard?.instantiateViewController(withIdentifier: signInNavigationID)
@@ -49,5 +87,69 @@ songNameLabel.text = "glaefhuazguahoahrowgrigreahoreag"
     }
     
     @IBAction func changeSongBtnTaped(_ sender: UIButton) {
+        currentSongIndex += sender.tag
+        resetArrayIndex(index: currentSongIndex)
+        prepareSongs()
+        songIsPlaying = false
+        changePlayBtnState()
+
     }
+    
+    @IBAction func playBtnTapped(_ sender: UIButton) {
+        //songPlayer.delegate = self
+     resetArrayIndex(index: currentSongIndex)
+      changePlayBtnState()
+    }
+    
+    func changePlayBtnState(){
+        songPlayer.delegate = self
+        if songIsPlaying{
+        playBtn.setImage(UIImage(named: "Play"), for: .normal)
+            songPlayer.pause()
+            
+        }else{
+            playBtn.setImage(UIImage(named: "Pause"), for: .normal)
+            songPlayer.play()
+            
+            
+        }
+        songIsPlaying = !songIsPlaying
+        
+    }
+    func changeImages(){
+    Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector (changeImage), userInfo: nil, repeats: true)
+    }
+    @objc func changeImage(){
+    let randamIndex = Int(arc4random_uniform(8 + 1))
+        artistImage.image = UIImage(named: "\(randamIndex)")
+    }
+    func resetArrayIndex(index: Int){
+        if index < 0{
+            currentSongIndex = (audioList?.count)! - 1
+        }
+        if index > (audioList?.count)! - 1{
+            currentSongIndex = 0
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+     songPlayer.stop()
+        LocalStore.songLocalStore.saveLastSongIndex(index: currentSongIndex)
+        
+    }
+}
+
+extension SongViewController :  AVAudioPlayerDelegate {
+func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+    if flag {
+        
+        print("Audio player finished playing")
+
+        self.songPlayer.stop()
+        //    self.songPlayer = nil
+        // Write code to play next audio.
+        currentSongIndex += 1
+        prepareSongs()
+        songPlayer.play()
+    }
+}
 }

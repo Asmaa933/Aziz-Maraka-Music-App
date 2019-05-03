@@ -24,13 +24,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jiI-6i-4tS">
                                         <rect key="frame" x="0.0" y="55" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -200,13 +200,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="eHj-OH-9ja">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aaaa" translatesAutoresizingMaskIntoConstraints="NO" id="eHj-OH-9ja">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-le-MZS">
                                 <rect key="frame" x="16" y="517" width="343" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJs-Jk-Unc">
+                                    <button opaque="NO" tag="-1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJs-Jk-Unc">
                                         <rect key="frame" x="0.0" y="0.0" width="97.5" height="100"/>
                                         <state key="normal" title="Button" image="Pervious"/>
                                         <connections>
@@ -216,8 +216,11 @@
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-Ul-7lh">
                                         <rect key="frame" x="122.5" y="0.0" width="98" height="100"/>
                                         <state key="normal" title="Button" image="Play"/>
+                                        <connections>
+                                            <action selector="playBtnTapped:" destination="ecS-qD-jMK" eventType="touchUpInside" id="fbB-dW-BT6"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-9a-O0v">
+                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-9a-O0v">
                                         <rect key="frame" x="245.5" y="0.0" width="97.5" height="100"/>
                                         <state key="normal" title="Button" image="Forward"/>
                                         <connections>
@@ -229,7 +232,7 @@
                                     <constraint firstAttribute="height" constant="100" id="Nvj-sf-Mt5"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-rY-7vw">
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-rY-7vw">
                                 <rect key="frame" x="0.0" y="159" width="375" height="306"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-0t-6eh">
@@ -260,6 +263,13 @@
                                     <constraint firstAttribute="height" constant="50" id="Mxa-sT-W9P"/>
                                 </constraints>
                             </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-q8-AZM">
+                                <rect key="frame" x="113" y="478" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="checkRepeatSwitchState:" destination="ecS-qD-jMK" eventType="valueChanged" id="pxm-bN-qRh"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -282,6 +292,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="eyf-0f-mki"/>
                     <connections>
+                        <outlet property="artistImage" destination="SHi-rY-7vw" id="QhA-wB-Qkb"/>
+                        <outlet property="playBtn" destination="u5I-Ul-7lh" id="XwI-57-HFg"/>
                         <outlet property="songNameLabel" destination="I4D-VX-HVl" id="2qO-eO-4LW"/>
                     </connections>
                 </viewController>
@@ -309,10 +321,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="2560" height="1440"/>
+        <image name="1" width="67" height="83"/>
         <image name="Forward" width="170" height="170"/>
         <image name="Pervious" width="170" height="170"/>
         <image name="Play" width="170" height="170"/>
+        <image name="aaaa" width="2560" height="1440"/>
         <image name="arrow" width="533" height="533"/>
     </resources>
 </document>

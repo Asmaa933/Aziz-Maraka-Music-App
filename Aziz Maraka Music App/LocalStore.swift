@@ -24,4 +24,15 @@ class LocalStore {
     func deleteAccessToken(){
         userDefaults.removeObject(forKey: accessToken)
     }
+ 
+    static let songLocalStore = LocalStore()
+    let songDefault = UserDefaults.standard
+    func saveLastSongIndex(index: Int) {
+        songDefault.set(index, forKey: lastSongIndexID)
+        
+    }
+    func getLastSongIndex() -> Int {
+        return songDefault.object(forKey: lastSongIndexID) as? Int ?? 0
+    }
+    
 }
