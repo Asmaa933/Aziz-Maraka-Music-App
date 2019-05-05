@@ -20,6 +20,7 @@ class SongViewController: UIViewController{
     var songIsPlaying = false
 
    
+    @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var songNameLabel: UILabel!
     
     @IBOutlet weak var playBtn: UIButton!
@@ -28,6 +29,7 @@ class SongViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         readFromPlist()
   configureAVSession()
 prepareSongs()
@@ -99,6 +101,7 @@ prepareSongs()
         //songPlayer.delegate = self
      resetArrayIndex(index: currentSongIndex)
       changePlayBtnState()
+       
     }
     
     func changePlayBtnState(){
@@ -131,11 +134,28 @@ prepareSongs()
             currentSongIndex = 0
         }
     }
-    override func viewWillDisappear(_ animated: Bool) {
-     songPlayer.stop()
-        LocalStore.songLocalStore.saveLastSongIndex(index: currentSongIndex)
+    
+    @IBAction func changeSongTime(_ sender: UISlider) {
+        resetArrayIndex(index: currentSongIndex)
+        songPlayer.currentTime = TimeInterval(slider.value)
+        songPlayer.prepareToPlay()
+        slider.maximumValue = Float(songPlayer.duration)
+        slider.value = 0.0
+        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSlider), userInfo: nil, repeats: true)
+        songPlayer.play()
+        
+        
         
     }
+    @objc func updateSlider(){
+        slider.value = Float(songPlayer.currentTime)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+     songPlayer.stop()
+ LocalStore.songLocalStore.saveLastSongIndex(index: currentSongIndex)
+        
+    }
+    
 }
 
 extension SongViewController :  AVAudioPlayerDelegate {
@@ -148,6 +168,7 @@ func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Boo
         //    self.songPlayer = nil
         // Write code to play next audio.
         currentSongIndex += 1
+        resetArrayIndex(index: currentSongIndex)
         prepareSongs()
         songPlayer.play()
     }

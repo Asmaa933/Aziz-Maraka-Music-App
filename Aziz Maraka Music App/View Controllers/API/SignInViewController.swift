@@ -37,6 +37,7 @@ class SignInViewController: UIViewController {
     removeActivityIndicator(activityIndicator: activityInd)
             self.logInBtn.isEnabled = true
             if responseModel != nil && error == nil{
+                print("accessToken:")
              print(responseModel?.access_token ?? "no access token")
                 let songVC = self.storyboard?.instantiateViewController(withIdentifier: homeNavigationID) 
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate

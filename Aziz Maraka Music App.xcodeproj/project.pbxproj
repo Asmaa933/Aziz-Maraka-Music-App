@@ -11,6 +11,7 @@
 		720E0316227924B200CC67E6 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E0315227924B100CC67E6 /* LocalStore.swift */; };
 		720E03182279284200CC67E6 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E03172279284200CC67E6 /* constants.swift */; };
 		720E031A22792C4E00CC67E6 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E031922792C4E00CC67E6 /* SongViewController.swift */; };
+		723D17C3227C0CC2007EEAEC /* SongsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723D17C2227C0CC2007EEAEC /* SongsTableViewController.swift */; };
 		72F627932279588A00031423 /* Ya_Bnt_elnas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278B2279588500031423 /* Ya_Bnt_elnas.mp3 */; };
 		72F627942279588A00031423 /* Wa2ef.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278C2279588500031423 /* Wa2ef.mp3 */; };
 		72F627952279588A00031423 /* Sheikh_Elbald.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278D2279588600031423 /* Sheikh_Elbald.mp3 */; };
@@ -44,6 +45,7 @@
 		720E0315227924B100CC67E6 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		720E03172279284200CC67E6 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		720E031922792C4E00CC67E6 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		723D17C2227C0CC2007EEAEC /* SongsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsTableViewController.swift; sourceTree = "<group>"; };
 		72F6278B2279588500031423 /* Ya_Bnt_elnas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ya_Bnt_elnas.mp3; sourceTree = "<group>"; };
 		72F6278C2279588500031423 /* Wa2ef.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wa2ef.mp3; sourceTree = "<group>"; };
 		72F6278D2279588600031423 /* Sheikh_Elbald.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sheikh_Elbald.mp3; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				720E031922792C4E00CC67E6 /* SongViewController.swift */,
+				723D17C2227C0CC2007EEAEC /* SongsTableViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				72F6B28E2277BCD900EEE3B6 /* SignInViewController.swift in Sources */,
 				72F6B2992277D8DE00EEE3B6 /* RegisterModel.swift in Sources */,
 				72F6B29F2278065100EEE3B6 /* RegisterResponseModel.swift in Sources */,
+				723D17C3227C0CC2007EEAEC /* SongsTableViewController.swift in Sources */,
 				72F6B27C2277BB7D00EEE3B6 /* RegisterViewController.swift in Sources */,
 				72F6B2952277C45700EEE3B6 /* RegisterService.swift in Sources */,
 				720E031A22792C4E00CC67E6 /* SongViewController.swift in Sources */,
