@@ -15,3 +15,5 @@ let signInNavigationID = "SignInNavigation"
 let homeNavigationID = "HomeNavigation"
 let lastSongIndexID = "last_Song"
 let songTableViewCellID = "songTableViewCell"
+let LabelcellTag = 5
+
