@@ -14,11 +14,12 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var logInBtn: UIBarButtonItem!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
+   
     let signInServices = SignInServices()
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
 
@@ -32,9 +33,10 @@ class SignInViewController: UIViewController {
             "password" : passwordTxt.text ?? "no password",
             "scope":"*"
         ]
+        
         let activityInd = showActivityIndicator(view: self.view)
         signInServices.signInUser(parameters: parameters) { (responseModel, error) in
-    removeActivityIndicator(activityIndicator: activityInd)
+            removeActivityIndicator(activityIndicator: activityInd)
             self.logInBtn.isEnabled = true
             if responseModel != nil && error == nil{
                 print("accessToken:")

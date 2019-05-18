@@ -11,16 +11,14 @@ import UIKit
 class RegisterViewController: UIViewController {
 
     // array of outlets
-
     @IBOutlet weak var msgToUserLabel: UILabel!
     @IBOutlet var newUserInfo: [UITextField]!
+    
     let registerService = RegisterService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-      
             }
-    
     
     func checkTxtfields(){
         //check all fields entered
@@ -28,9 +26,10 @@ class RegisterViewController: UIViewController {
             msgToUserLabel.isHidden = false
             msgToUserLabel.text = "Please enter above fields"
             
-            //add method to check that no field missed
     }
     }
+    
+    
     @IBAction func doneBtnTapped(_ sender: UIBarButtonItem) {
        checkTxtfields()
         let parameters : [String:Any] = ["name" : newUserInfo[0].text ?? ""  ,
@@ -39,7 +38,7 @@ class RegisterViewController: UIViewController {
                                          "loc":newUserInfo[3].text ?? ""  ,
                                          "regcod" : newUserInfo[4].text ?? "" ,
                                          "password" : newUserInfo[5].text ?? ""  ,
-                                        "password_confirmation" :newUserInfo[6].text ?? ""
+                                         "password_confirmation" :newUserInfo[6].text ?? ""
                                         ]
 
         registerService.registerNewUser(parameters: parameters) { (responseModel, error) in

@@ -1,4 +1,10 @@
-
+//
+//  SignInModel.swift
+//  Aziz Maraka Music App
+//
+//  Created by AsMaa on 4/30/19.
+//  Copyright © 2019 AsMaa. All rights reserved.
+//
 
 import Foundation
 struct SignInModel: Codable {

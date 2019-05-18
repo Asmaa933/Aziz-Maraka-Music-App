@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // check if login before skip sign in screen
         if let _ = LocalStore.sharedLocalStore.getAccessToken(){
             let mainSB = UIStoryboard(name: "Main", bundle: nil)
             let homeVC =  mainSB.instantiateViewController(withIdentifier: homeNavigationID) 

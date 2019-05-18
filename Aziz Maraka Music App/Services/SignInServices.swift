@@ -11,8 +11,6 @@ import Alamofire
 
 class SignInServices {
     
-    
-    
     func signInUser(parameters: [String:Any],completion: @escaping (_ jsonData: SignInModel?,_ error:Error?) -> Void) {
         let headers = ["Content-Type": "application/json"]
         Alamofire.request(URLs.signInURL.rawValue.getFullURL(), method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in

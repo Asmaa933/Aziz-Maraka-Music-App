@@ -9,13 +9,10 @@
 import Foundation
 import UIKit
 
-extension String{
-    // concatenate full url because Raw value for enum case must be a literal
-    func getFullURL() -> String {
-        return baseURL + self
-    }
+func checkTextFieldsAreEmpty(txts: [UITextField]) -> Bool{
+    return txts.isEmpty
+    
 }
-
 
 func showActivityIndicator(view: UIView) -> UIActivityIndicatorView{
     let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
@@ -32,3 +29,4 @@ func removeActivityIndicator(activityIndicator: UIActivityIndicatorView){
     activityIndicator.removeFromSuperview()
     
 }
+

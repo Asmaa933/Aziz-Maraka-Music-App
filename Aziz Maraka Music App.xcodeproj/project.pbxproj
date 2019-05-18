@@ -12,6 +12,7 @@
 		720E03182279284200CC67E6 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E03172279284200CC67E6 /* constants.swift */; };
 		720E031A22792C4E00CC67E6 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E031922792C4E00CC67E6 /* SongViewController.swift */; };
 		723D17C3227C0CC2007EEAEC /* SongsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723D17C2227C0CC2007EEAEC /* SongsTableViewController.swift */; };
+		72674429228FC4340033009B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72674428228FC4340033009B /* Extension.swift */; };
 		72F627932279588A00031423 /* Ya_Bnt_elnas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278B2279588500031423 /* Ya_Bnt_elnas.mp3 */; };
 		72F627942279588A00031423 /* Wa2ef.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278C2279588500031423 /* Wa2ef.mp3 */; };
 		72F627952279588A00031423 /* Sheikh_Elbald.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72F6278D2279588600031423 /* Sheikh_Elbald.mp3 */; };
@@ -31,7 +32,6 @@
 		72F6B2932277C2F100EEE3B6 /* HelpingMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2922277C2F100EEE3B6 /* HelpingMethods.swift */; };
 		72F6B2952277C45700EEE3B6 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2942277C45700EEE3B6 /* RegisterService.swift */; };
 		72F6B2992277D8DE00EEE3B6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */; };
-		72F6B29B2277E2F000EEE3B6 /* CheckRegisteredInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B29A2277E2F000EEE3B6 /* CheckRegisteredInfo.swift */; };
 		72F6B29F2278065100EEE3B6 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B29E2278065100EEE3B6 /* RegisterResponseModel.swift */; };
 		72F6B2A122780C2200EEE3B6 /* SignInServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6B2A022780C2200EEE3B6 /* SignInServices.swift */; };
 		934CDBE1104DA935862EAAC4 /* Pods_Aziz_Maraka_Music_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4202372991DBE4C98B63C761 /* Pods_Aziz_Maraka_Music_App.framework */; };
@@ -46,6 +46,7 @@
 		720E03172279284200CC67E6 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		720E031922792C4E00CC67E6 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		723D17C2227C0CC2007EEAEC /* SongsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsTableViewController.swift; sourceTree = "<group>"; };
+		72674428228FC4340033009B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		72F6278B2279588500031423 /* Ya_Bnt_elnas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ya_Bnt_elnas.mp3; sourceTree = "<group>"; };
 		72F6278C2279588500031423 /* Wa2ef.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wa2ef.mp3; sourceTree = "<group>"; };
 		72F6278D2279588600031423 /* Sheikh_Elbald.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sheikh_Elbald.mp3; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		72F6B2922277C2F100EEE3B6 /* HelpingMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpingMethods.swift; sourceTree = "<group>"; };
 		72F6B2942277C45700EEE3B6 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		72F6B2982277D8DE00EEE3B6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
-		72F6B29A2277E2F000EEE3B6 /* CheckRegisteredInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckRegisteredInfo.swift; sourceTree = "<group>"; };
 		72F6B29E2278065100EEE3B6 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		72F6B2A022780C2200EEE3B6 /* SignInServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,8 +131,8 @@
 		72F627A022796C1C00031423 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				720E031922792C4E00CC67E6 /* SongViewController.swift */,
 				723D17C2227C0CC2007EEAEC /* SongsTableViewController.swift */,
+				720E031922792C4E00CC67E6 /* SongViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				72F6B2922277C2F100EEE3B6 /* HelpingMethods.swift */,
-				72F6B29A2277E2F000EEE3B6 /* CheckRegisteredInfo.swift */,
+				72674428228FC4340033009B /* Extension.swift */,
 			);
 			path = "Helping Methods";
 			sourceTree = "<group>";
@@ -361,9 +361,9 @@
 				720E031A22792C4E00CC67E6 /* SongViewController.swift in Sources */,
 				72F6B2A122780C2200EEE3B6 /* SignInServices.swift in Sources */,
 				720E03182279284200CC67E6 /* constants.swift in Sources */,
-				72F6B29B2277E2F000EEE3B6 /* CheckRegisteredInfo.swift in Sources */,
 				72F6B27A2277BB7D00EEE3B6 /* AppDelegate.swift in Sources */,
 				72F6B2932277C2F100EEE3B6 /* HelpingMethods.swift in Sources */,
+				72674429228FC4340033009B /* Extension.swift in Sources */,
 				72F6B2912277C04B00EEE3B6 /* URLs.swift in Sources */,
 				720E031422791F6700CC67E6 /* SignInModel.swift in Sources */,
 				720E0316227924B200CC67E6 /* LocalStore.swift in Sources */,
