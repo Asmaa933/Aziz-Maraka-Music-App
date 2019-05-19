@@ -126,8 +126,8 @@ class SongViewController: UIViewController{
     }
     
     @objc func changeImage(){
-        let randamIndex = Int(arc4random_uniform(8 + 1))
-        artistImage.image = UIImage(named: "\(randamIndex)")
+        let randomIndex = Int(arc4random_uniform(6))
+        artistImage.image = UIImage(named: "\(randomIndex)")
     }
     
     func resetArrayIndex(index: Int){
