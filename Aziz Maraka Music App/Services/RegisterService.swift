@@ -9,6 +9,15 @@
 import Foundation
 import Alamofire
 
+/*
+ name : string
+ email :string
+ agency:string
+ loc: string
+ regcod :777777
+ var password:string
+ var password_confirmation: string
+ */
 class RegisterService  {
     
     let headers = ["accept": "application/json"]

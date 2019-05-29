@@ -205,21 +205,21 @@
                                 <subviews>
                                     <button opaque="NO" tag="-1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJs-Jk-Unc">
                                         <rect key="frame" x="0.0" y="0.0" width="97.5" height="100"/>
-                                        <state key="normal" title="Button" image="Pervious"/>
+                                        <state key="normal" image="Pervious"/>
                                         <connections>
                                             <action selector="changeSongBtnTaped:" destination="ecS-qD-jMK" eventType="touchUpInside" id="Jrw-Zd-P5e"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-Ul-7lh">
                                         <rect key="frame" x="122.5" y="0.0" width="98" height="100"/>
-                                        <state key="normal" title="Button" image="Play"/>
+                                        <state key="normal" image="Play"/>
                                         <connections>
                                             <action selector="playBtnTapped:" destination="ecS-qD-jMK" eventType="touchUpInside" id="fbB-dW-BT6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-9a-O0v">
                                         <rect key="frame" x="245.5" y="0.0" width="97.5" height="100"/>
-                                        <state key="normal" title="Button" image="Forward"/>
+                                        <state key="normal" image="Forward"/>
                                         <connections>
                                             <action selector="changeSongBtnTaped:" destination="ecS-qD-jMK" eventType="touchUpInside" id="CeT-im-Reh"/>
                                         </connections>

@@ -9,6 +9,8 @@
 import Foundation
 import Alamofire
 
+//user name: asmaa2019@gmail.com
+//password:12345678
 class SignInServices {
     
     func signInUser(parameters: [String:Any],completion: @escaping (_ jsonData: SignInModel?,_ error:Error?) -> Void) {
