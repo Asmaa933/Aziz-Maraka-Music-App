@@ -175,7 +175,7 @@
 				72F6279E22796BF200031423 /* JSON Models */,
 				72F6B2962277C7A400EEE3B6 /* Services */,
 				72F627A122796CAE00031423 /* Models */,
-				72F6B28F2277BCDF00EEE3B6 /* View Controllers */,
+				72F6B28F2277BCDF00EEE3B6 /* Controllers */,
 				72F6B2972277C81C00EEE3B6 /* Helping Methods */,
 				720E0315227924B100CC67E6 /* LocalStore.swift */,
 				720E03172279284200CC67E6 /* constants.swift */,
@@ -183,13 +183,13 @@
 			path = "Aziz Maraka Music App";
 			sourceTree = "<group>";
 		};
-		72F6B28F2277BCDF00EEE3B6 /* View Controllers */ = {
+		72F6B28F2277BCDF00EEE3B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				72F6279F22796C1100031423 /* API */,
 				72F627A022796C1C00031423 /* UI */,
 			);
-			path = "View Controllers";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		72F6B2962277C7A400EEE3B6 /* Services */ = {
