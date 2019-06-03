@@ -229,7 +229,7 @@
                                     <constraint firstAttribute="height" constant="100" id="Nvj-sf-Mt5"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-rY-7vw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-rY-7vw">
                                 <rect key="frame" x="16" y="134.5" width="343" height="311.5"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-q8-AZM">
