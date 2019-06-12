@@ -345,22 +345,23 @@
                                     <outlet property="delegate" destination="e3p-pS-9PA" id="lqZ-22-YaF"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deT-Rm-VtP">
-                                <rect key="frame" x="16" y="82" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="14B-gy-PvS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <connections>
+                                    <outlet property="delegate" destination="e3p-pS-9PA" id="3OB-Re-3ti"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KX9-PJ-kCO" firstAttribute="trailing" secondItem="1oe-Zl-pE8" secondAttribute="trailing" id="H0X-IZ-lNN"/>
+                            <constraint firstItem="14B-gy-PvS" firstAttribute="leading" secondItem="1oe-Zl-pE8" secondAttribute="leading" id="Iot-qo-Evb"/>
                             <constraint firstItem="KX9-PJ-kCO" firstAttribute="leading" secondItem="1oe-Zl-pE8" secondAttribute="leading" id="UyP-Bw-tTd"/>
-                            <constraint firstItem="KX9-PJ-kCO" firstAttribute="top" secondItem="deT-Rm-VtP" secondAttribute="bottom" constant="21" id="WGa-pa-SH9"/>
-                            <constraint firstItem="deT-Rm-VtP" firstAttribute="leading" secondItem="1oe-Zl-pE8" secondAttribute="leading" constant="16" id="d39-O3-LJx"/>
-                            <constraint firstItem="deT-Rm-VtP" firstAttribute="top" secondItem="1oe-Zl-pE8" secondAttribute="top" constant="18" id="j5l-h0-snr"/>
                             <constraint firstItem="KX9-PJ-kCO" firstAttribute="bottom" secondItem="1oe-Zl-pE8" secondAttribute="bottom" id="lHb-WS-ETY"/>
-                            <constraint firstItem="1oe-Zl-pE8" firstAttribute="trailing" secondItem="deT-Rm-VtP" secondAttribute="trailing" constant="16" id="upI-KM-83N"/>
+                            <constraint firstItem="KX9-PJ-kCO" firstAttribute="top" secondItem="14B-gy-PvS" secondAttribute="bottom" constant="13" id="lLO-ZW-Oo5"/>
+                            <constraint firstItem="14B-gy-PvS" firstAttribute="trailing" secondItem="1oe-Zl-pE8" secondAttribute="trailing" id="vaA-0N-AxU"/>
+                            <constraint firstItem="14B-gy-PvS" firstAttribute="top" secondItem="1oe-Zl-pE8" secondAttribute="top" id="yNR-OQ-vUj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1oe-Zl-pE8"/>
                     </view>
@@ -372,6 +373,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBarr" destination="14B-gy-PvS" id="je5-G1-RFT"/>
                         <outlet property="songsTable" destination="KX9-PJ-kCO" id="B7s-Ms-wia"/>
                     </connections>
                 </viewController>
