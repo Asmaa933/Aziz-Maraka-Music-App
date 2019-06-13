@@ -11,7 +11,6 @@ import UIKit
 class RegisterViewController: UIViewController {
 
     // array of outlets
-    @IBOutlet weak var msgToUserLabel: UILabel!
     @IBOutlet var newUserInfo: [UITextField]!
     
     let registerService = RegisterService()
@@ -23,9 +22,10 @@ class RegisterViewController: UIViewController {
     func checkTxtfields(){
         //check all fields entered
         if checkTextFieldsAreEmpty(txts: []){
-            msgToUserLabel.isHidden = false
-            msgToUserLabel.text = "Please enter above fields"
-            
+    let alert = UIAlertController(title: "alert", message: "Please fill all Fields", preferredStyle: .alert)
+    let action =  UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
     }
     }
     

@@ -136,19 +136,13 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EA3-BQ-fY8">
-                                <rect key="frame" x="31" y="527" width="307" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Puy-Cw-Wmx" firstAttribute="leading" secondItem="6ZD-Bh-One" secondAttribute="leading" constant="16" id="Leh-0k-EzI"/>
                             <constraint firstItem="6ZD-Bh-One" firstAttribute="trailing" secondItem="Puy-Cw-Wmx" secondAttribute="trailing" constant="16" id="aq3-yM-Bym"/>
                             <constraint firstItem="Puy-Cw-Wmx" firstAttribute="top" secondItem="6ZD-Bh-One" secondAttribute="top" constant="50" id="jOI-jd-Ezs"/>
+                            <constraint firstItem="6ZD-Bh-One" firstAttribute="bottom" secondItem="Puy-Cw-Wmx" secondAttribute="bottom" constant="193" id="yWi-IL-BCP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6ZD-Bh-One"/>
                     </view>
@@ -160,7 +154,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="msgToUserLabel" destination="EA3-BQ-fY8" id="STF-kV-GOX"/>
                         <outletCollection property="newUserInfo" destination="EV8-vG-AnF" collectionClass="NSMutableArray" id="YpD-Ek-djW"/>
                         <outletCollection property="newUserInfo" destination="cTr-lL-PL1" collectionClass="NSMutableArray" id="SvR-ud-thx"/>
                         <outletCollection property="newUserInfo" destination="GHM-Ln-y0Y" collectionClass="NSMutableArray" id="m8G-3m-JFc"/>
